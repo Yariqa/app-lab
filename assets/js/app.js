@@ -46,3 +46,22 @@ $('.feedback-carousel').owlCarousel({
         '<i class="far fa-long-arrow-right"></i>',
     ],
 })
+
+// section active class when window scrool js
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+});
+
+function onScroll(event) {
+    var scrollPos = $(document).scrollTop();
+    $('#navbarSupportedContent a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#navbarSupportedContent ul li a').removeClass("active");
+            currLink.addClass("active");
+        } else {
+            currLink.removeClass("active");
+        }
+    });
+}

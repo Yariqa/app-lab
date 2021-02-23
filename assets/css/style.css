@@ -54,12 +54,15 @@ header.uk-active {
     transition: linear .3s;
     box-shadow: 0 0 15px #0000001f;
 }
+
 .navbar-brand {
     width: 120px;
 }
-.navbar-brand img{
+
+.navbar-brand img {
     width: 100%;
 }
+
 .nav-item {
     margin-left: 25px;
 }
@@ -71,7 +74,8 @@ header.uk-active {
     line-height: 2;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
     color: #3300ff;
 }
 
