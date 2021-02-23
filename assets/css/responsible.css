@@ -51,6 +51,42 @@
     .featured-item,
     .featured-item.featured-item-grid {
         max-width: none;
+        text-align: center;
+        display: block;
     }
+    .banner-content br{
+        display: none;
+    }
+    .quote-content{
+        display: block;
+        padding: 50px 0;
+    }
+    .quote-content h2{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 30px;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .quote-content p{
+        border: none;
+        padding: 0;
+    }
+    .sec-title br{
+        display: none;
+    }
+    .sec-title h2{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .app-content ul li{
+        margin-left: 0px !important;
+        margin: 5px;
+    }
+    .featured-item img{
+        margin: 0;
+    }
+}
 
 }
